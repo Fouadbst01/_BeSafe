@@ -1,0 +1,324 @@
+name: test3
+description: this app help his user to besave from Corna virus by alert them to wear masks and to change the mask.
+authors:
+  - fouad el bssita
+  # The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+  background_locator: ^1.1.3+1
+  path_provider:
+  percent_indicator: ^2.1.3
+  flutter_snake_navigationbar: ^0.4.0+1
+  location: ^3.0.2
+  flutter_local_notifications: ^1.4.3
+  shared_preferences: ^0.5.4+8
+  web_scraper:
+  http_client: ^1.4.0
+  firebase_core:
+  cloud_firestore: 0.12.9+1
+  firebase_messaging: ^6.0.15
+  firebase_database:
+  cloud_functions: ^0.5.0
+  geocoder: ^0.2.1
+  pytorch_mobile: ^0.0.2
+  image_picker: ^0.6.5+2
+  intl: ^0.16.1
+  provider: ^3.2.0
+  flutter_statusbarcolor: ^0.2.3
+  country_pickers: ^1.2.1
+  connectivity: ^0.4.8+6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/mask2.png
+    - assets/mask.png
+    - assets/wifi.png
+    - assets/c.png
+    - assets/fmodel.pt
+    - assets/labels.csv
+    - assets/icon1.png
+    - assets/icon2.png
+    - assets/icon31.png
+    - assets/icon4.png
+    - assets/Contries.json
+    - assets/AF.png
+    - assets/AL.png
+    - assets/DZ.png
+    - assets/AD.png
+    - assets/AO.png
+    - assets/AI.png
+    - assets/AG.png
+    - assets/AR.png
+    - assets/AM.png
+    - assets/AW.png
+    - assets/AU.png
+    - assets/AT.png
+    - assets/AZ.png
+    - assets/BS.png
+    - assets/BH.png
+    - assets/BD.png
+    - assets/BB.png
+    - assets/BY.png
+    - assets/BE.png
+    - assets/BZ.png
+    - assets/BJ.png
+    - assets/BM.png
+    - assets/BT.png
+    - assets/BO.png
+    - assets/BA.png
+    - assets/BW.png
+    - assets/BR.png
+    - assets/BN.png
+    - assets/BG.png
+    - assets/BF.png
+    - assets/BI.png
+    - assets/KH.png
+    - assets/CM.png
+    - assets/CA.png
+    - assets/CV.png
+    - assets/KY.png
+    - assets/CF.png
+    - assets/TD.png
+    - assets/CL.png
+    - assets/CN.png
+    - assets/CO.png
+    - assets/KM.png
+    - assets/CG.png
+    - assets/CD.png
+    - assets/CR.png
+    - assets/CI.png
+    - assets/HR.png
+    - assets/CU.png
+    - assets/CW.png
+    - assets/CY.png
+    - assets/CZ.png
+    - assets/DK.png
+    - assets/DJ.png
+    - assets/DM.png
+    - assets/DO.png
+    - assets/EC.png
+    - assets/EG.png
+    - assets/SV.png
+    - assets/GQ.png
+    - assets/ER.png
+    - assets/EE.png
+    - assets/ET.png
+    - assets/FK.png
+    - assets/FO.png
+    - assets/FJ.png
+    - assets/FI.png
+    - assets/FR.png
+    - assets/GF.png
+    - assets/PF.png
+    - assets/GA.png
+    - assets/GM.png
+    - assets/GE.png
+    - assets/DE.png
+    - assets/GH.png
+    - assets/GI.png
+    - assets/GR.png
+    - assets/GL.png
+    - assets/GD.png
+    - assets/GP.png
+    - assets/GT.png
+    - assets/GN.png
+    - assets/GW.png
+    - assets/GY.png
+    - assets/HT.png
+    - assets/VA.png
+    - assets/HN.png
+    - assets/HK.png
+    - assets/HU.png
+    - assets/IS.png
+    - assets/IN.png
+    - assets/ID.png
+    - assets/IR.png
+    - assets/IQ.png
+    - assets/IE.png
+    - assets/IM.png
+    - assets/IL.png
+    - assets/IT.png
+    - assets/JM.png
+    - assets/JP.png
+    - assets/JE.png
+    - assets/JO.png
+    - assets/KZ.png
+    - assets/KE.png
+    - assets/KR.png
+    - assets/KW.png
+    - assets/KG.png
+    - assets/LA.png
+    - assets/LV.png
+    - assets/LB.png
+    - assets/LS.png
+    - assets/LR.png
+    - assets/LY.png
+    - assets/LI.png
+    - assets/LT.png
+    - assets/LU.png
+    - assets/MO.png
+    - assets/MK.png
+    - assets/MG.png
+    - assets/MW.png
+    - assets/MY.png
+    - assets/MV.png
+    - assets/ML.png
+    - assets/MT.png
+    - assets/MQ.png
+    - assets/MR.png
+    - assets/MU.png
+    - assets/YT.png
+    - assets/MX.png
+    - assets/MD.png
+    - assets/MC.png
+    - assets/MN.png
+    - assets/ME.png
+    - assets/MS.png
+    - assets/MA.png
+    - assets/MZ.png
+    - assets/MM.png
+    - assets/NA.png
+    - assets/NP.png
+    - assets/NL.png
+    - assets/NL.png
+    - assets/NC.png
+    - assets/NZ.png
+    - assets/NI.png
+    - assets/NE.png
+    - assets/NG.png
+    - assets/NO.png
+    - assets/OM.png
+    - assets/PK.png
+    - assets/PS.png
+    - assets/PA.png
+    - assets/PG.png
+    - assets/PY.png
+    - assets/PE.png
+    - assets/PH.png
+    - assets/PL.png
+    - assets/PT.png
+    - assets/QA.png
+    - assets/RE.png
+    - assets/RO.png
+    - assets/RU.png
+    - assets/RW.png
+    - assets/BL.png
+    - assets/KN.png
+    - assets/LC.png
+    - assets/MF.png
+    - assets/PM.png
+    - assets/VC.png
+    - assets/SM.png
+    - assets/ST.png
+    - assets/SA.png
+    - assets/SN.png
+    - assets/RS.png
+    - assets/SC.png
+    - assets/SL.png
+    - assets/SG.png
+    - assets/SX.png
+    - assets/SK.png
+    - assets/SI.png
+    - assets/SO.png
+    - assets/ZA.png
+    - assets/SS.png
+    - assets/ES.png
+    - assets/LK.png
+    - assets/SD.png
+    - assets/SR.png
+    - assets/SZ.png
+    - assets/SE.png
+    - assets/CH.png
+    - assets/SY.png
+    - assets/TW.png
+    - assets/TJ.png
+    - assets/TZ.png
+    - assets/TH.png
+    - assets/TL.png
+    - assets/TG.png
+    - assets/TT.png
+    - assets/TN.png
+    - assets/TR.png
+    - assets/TC.png
+    - assets/UG.png
+    - assets/UA.png
+    - assets/AE.png
+    - assets/GB.png
+    - assets/US.png
+    - assets/UY.png
+    - assets/UZ.png
+    - assets/VE.png
+    - assets/VG.png
+    - assets/EH.png
+    - assets/YE.png
+    - assets/ZM.png
+    - assets/ZW.png
+    - assets/VN.png
+    - assets/World.png
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
